@@ -1,0 +1,5 @@
+CREATE TABLE MAQUINAS_REGISTRADORAS
+	(
+    codigoMaquina int AUTO_INCREMENT PRIMARY KEY,
+    piso int
+    );

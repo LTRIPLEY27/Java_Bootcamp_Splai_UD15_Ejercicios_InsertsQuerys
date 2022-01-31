@@ -1,0 +1,9 @@
+
+CREATE TABLE SUMINISTRA
+	(
+    idProveedor char (4) NOT NULL,
+    codigo int NOT NULL,
+    precio int,
+    FOREIGN KEY (idProveedor) REFERENCES PROVEEDORES(idProveedor) ON DELETE CASCADE ON UPDATE CASCADE,
+    FOREIGN KEY (codigo) REFERENCES PIEZAS(codigo) ON DELETE CASCADE ON UPDATE CASCADE
+    );
